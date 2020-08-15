@@ -209,7 +209,7 @@ def big_shoe_rebounds
     team_atts[:players].each do |player_stats|
       # binding.pry
      if player_stats[:shoe] > max_shoe_size
-       max_shoe_size << player_stats[:shoe]
+       max_shoe_size = player_stats[:shoe]
        binding.pry
       end
     end
